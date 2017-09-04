@@ -1,0 +1,22 @@
+package com.taobao.api.response;
+
+import com.taobao.api.TaobaoResponse;
+import com.taobao.api.domain.ItemImg;
+import com.taobao.api.internal.mapping.ApiField;
+
+public class ItemImgUploadResponse
+        extends TaobaoResponse {
+    private static final long serialVersionUID = 5235518449423518116L;
+    @ApiField("item_img")
+    private ItemImg itemImg;
+
+    public void setItemImg(ItemImg itemImg) {
+        this.itemImg = itemImg;
+    }
+
+    public ItemImg getItemImg() {
+        return this.itemImg;
+    }
+}
+
+
